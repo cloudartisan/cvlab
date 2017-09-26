@@ -51,7 +51,10 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-v", "--verbose",
         action="store_true", default=False,
-        help="increase output verbosity")
+        help="Increase output verbosity")
+    parser.add_argument("-f", "--flip",
+        action="store_true", default=False,
+        help="Flip video to mirror the view")
     parser.add_argument("--width",
         default=DEF_WIDTH,
         help="Video width")
@@ -85,6 +88,8 @@ def main():
         grabbed, frame = capture.read()
         if not grabbed or frame is None:
             continue
+        if args.flip:
+            frame = np.fliplr(frame).copy()
         img_HSV = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         img_mask = cv2.inRange(img_HSV, range_min, range_max)
         img_erode = cv2.erode(img_mask, None, iterations=3)
