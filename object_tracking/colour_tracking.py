@@ -11,6 +11,7 @@ BLUE = 'blue'
 GREEN = 'green'
 RED = 'red'
 ORANGE = 'orange'
+YELLOW = 'yellow'
 
 BGR = 'bgr'
 HSV = 'hsv'
@@ -37,6 +38,11 @@ COLOUR_MAP = {
         HSV_MIN : (0, 150, 210),
         HSV_MAX : (44, 291, 286),
         BGR : (0, 165, 255),
+    },
+    YELLOW : {
+        HSV_MIN : (10, 100, 100),
+        HSV_MAX : (45, 255, 255),
+        BGR : (0, 255, 255),
     }
 }
 
