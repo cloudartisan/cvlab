@@ -1,5 +1,5 @@
 nox-automation==0.17.0
-opencv-contrib-python==3.3.0.10
+opencv-contrib-python==3.4.0.12
 pyaudio==0.2.11
 scipy==0.19.1
 pillow==4.2.1
