@@ -2,6 +2,9 @@
 
 Collection of computer vision tools for experimentation with OpenCV.
 
+## Requirements
+- Python 3.13 or higher
+
 ## Installation
 
 ### Setup Virtual Environment (Recommended)
