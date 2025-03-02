@@ -86,7 +86,9 @@ def main():
     cv2.namedWindow("Mask")
     cv2.namedWindow("Erosion")
 
+    # Allow some time for camera initialization
     capture = cv2.VideoCapture(0)
+    time.sleep(1)
     capture.set(cv2.CAP_PROP_FRAME_WIDTH, args.width)
     capture.set(cv2.CAP_PROP_FRAME_HEIGHT, args.height)
 
