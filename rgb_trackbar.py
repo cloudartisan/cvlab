@@ -16,7 +16,7 @@ cv2.createTrackbar('G','image',0,255,nothing)
 cv2.createTrackbar('B','image',0,255,nothing)
 
 # create switch for ON/OFF functionality
-switch = '0 : OFF \n1 : ON'
+switch = 'ON/OFF'
 cv2.createTrackbar(switch, 'image',0,1,nothing)
 
 while(1):
